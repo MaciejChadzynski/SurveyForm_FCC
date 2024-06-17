@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=58195&format=png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lilita+One&display=swap" rel="stylesheet">
+    <title>The Best Survey Ever Made</title>
+</head>
+<body>
+<div class="container">
+    <header>
+    <h1 id="title" class="title-text">Food, drinks and Games</h1>
+<p id="description" class="description-text">Please fill up the Survey</p>
+</header>
+<form id="survey-form">
+
+<div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" name="name" id="name" class="formControl" placeholder="Enter your in-game name" required>
+</div>
+
+<div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name="email" id="email" class="formControl" placeholder="Enter your email" required>
+</div>
+
+<div class="form-group">
+    <label id="number-label" for="number">Age</label>
+    <input type="number" name="age" id="number" min="1" max="130" class="formControl" placeholder="Enter your age" required>
+</div>
+
+<div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address" required>
+</div>
+
+<div class="form-group">
+<p>What is your favourite food?</p>
+<select name="food" id="dropdown" class="formControl" required>
+    <option disabled selected value>Select your favourite food</option>
+    <option value="pizza">Pizza</option>
+    <option value="burger">Burger</option>
+    <option value="sushi">Sushi</option>
+    <option value="schawarma">Schawarma</option>
+    <option value="other">Other</option>
+</select>
+</div>
+
+<div class="form-group">
+    <p>Do you like cooking?</p>
+    <label>
+        <input type="radio" class="input-radio" value="definitely" name="user-recommend" checked>Definitely
+    </label>
+    <label>
+        <input type="radio" class="input-radio" value="not-at-all" name="user-recommend">Not at all
+    </label>
+    <label>
+        <input type="radio" class="input-radio" value="not-sure" name="user-recommend">I'm not sure
+    </label>
+</div>
+
+<div class="form-group">
+    <p>What is your favourite drink?</p>
+<select name="drink" id="fav-drink" class="formControl" required>
+<option disabled selected value>Select your favourite drink</option>
+<option value="cola">Coca-Cola</option>
+<option value="sprite">Sprite</option>
+<option value="fanta">Fanta</option>
+<option value="other-drink">Other Drink</option>
+</select>
+</div>
+
+<div class="form-group">
+    <p>What are your favourite games?
+        <span class="stext">(You can check multiple options)</span>
+    </p>
+    <label>
+    <input type="checkbox" name="prefer" class="input-checkbox" value="lol">League of Legends
+    </label>
+    <label>
+        <input type="checkbox" name="prefer" class="input-checkbox" value="cs-go">Counter Strike: Global Offensive
+        </label>
+        <label>
+            <input type="checkbox" name="prefer" class="input-checkbox" value="cs-1.6">Counter Strike 1.6
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" class="input-checkbox" value="wow">World of Warcraft
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="tibia">Tibia
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="rr-td">Rush Royale: Tower Defense
+                        </label>
+                        <label>
+                            <input type="checkbox" name="prefer" class="input-checkbox" value="witcher">The Witcher: Wild Hunt
+                            </label>
+                            <label>
+                                <input type="checkbox" name="prefer" class="input-checkbox" value="rdr2">Red Dead Redemption 2
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="prefer" class="input-checkbox" value="barbie-shop">Barbie in the Candy Shop
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="prefer" class="input-checkbox" value="rs-classic">RuneScape Classic
+                                        </label>
+</div>
+
+<div class="form-group">
+    <p>Do you have any comments or suggestions?</p>
+    <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+</div>
+
+<div class="form-group">
+<button type="submit" id="submit" class="submit-button">Submit</button>
+</div>
+
+  </form>
+</div>
+<footer id="footer">
+    <p>© 2024 Vax Man</p>
+</footer>
+</body>
+</html>

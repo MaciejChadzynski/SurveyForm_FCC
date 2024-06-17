@@ -1,0 +1,190 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #796ec8;
+    --color-darkblue-alpha: rgba(13,138,187,8);
+    --color-black: #ffd500;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+    padding: 1rem;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg, rgba(129, 19, 133, 0.564), rgba(25, 15, 223, 0.66) ), url(https://img.freepik.com/fotos-kostenlos/futuristische-videospielausruestung-beleuchtet-in-generativer-ki-des-nachtclubs_188544-32105.jpg?w=900&t=st=1690126811~exp=1690127411~hmac=61512ca506e015159b5912c687f0fbb5477f321bb54a680d3a1d657324b03280);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#title {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 4em;
+    text-shadow: 6px 6px 5px black;
+}
+
+h1 {
+    font-weight: 500;
+    line-height: 1;
+}
+
+p {
+    font-size: 125%;
+}
+
+h1,p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 120%;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+input,button,select,textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    padding: 2rem 1rem;
+}
+
+header {
+    padding: 0 0.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.4);
+}
+
+.stext {
+    display: flex;
+    font-style: italic;
+    font-size: 0.75rem;
+    color: white;
+}
+
+form {
+    background: rgba(194, 114, 255, 0.65);
+    border-radius: 0.25rem;
+}
+
+.form-group {
+    margin: 0 auto 1.5rem auto;
+    padding: 0.5rem;
+    font-family: "Alata", sans-serif;
+    font-weight: bold;
+}
+
+select {
+    appearance: none;
+}
+
+.formControl {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem 0.5rem;
+    color: purple;
+    background: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+}
+
+.formControl:focus,.input-textarea:focus {
+    border-color: black;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(226, 13, 13, 0.5);
+}
+
+.input-radio,.input-checkbox {
+    display: inline-block;
+    margin-right: 0.7rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    align-items: center;
+}
+
+.input-textarea {
+    width: 100%;
+    padding: 0.2rem 0.4rem;
+    font-size: 120%;
+    outline: none;
+    color: purple;
+    border: 1px solid white;
+    border-radius: 0.4rem;
+}
+
+.submit-button {
+    background: white;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: black;
+    border: none;
+}
+
+footer {
+    margin-bottom: -10px;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+@media (mid-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width:800px){
+    .container{
+        max-width: 760px;
+    }
+}
+
+@media (min-width:480px){
+    form{
+        padding: 2.5rem;
+    }
+}
