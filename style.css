@@ -5,11 +5,6 @@
     --color-black: #ffd500;
 }
 
-
-.text-center {
-    text-align: center;
-}
-
 *,*::before,*::after {
     box-sizing: border-box;
 }
@@ -92,7 +87,7 @@ header {
     text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.4);
 }
 
-.stext {
+.clue {
     display: flex;
     font-style: italic;
     font-size: 0.75rem;
@@ -104,11 +99,15 @@ form {
     border-radius: 0.25rem;
 }
 
+@media (min-width:480px){
+    form{
+        padding: 2.5rem;
+    }
+}
+
 .form-group {
     margin: 0 auto 1.5rem auto;
     padding: 0.5rem;
-    font-family: "Alata", sans-serif;
-    font-weight: bold;
 }
 
 select {
@@ -161,15 +160,14 @@ select {
     outline: none;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: black;
+    color: white;
+    text-shadow: 1px 1px 1px black, 0 0 0.2em black, 0 0 0.1em black;
     border: none;
 }
 
-footer {
-    margin-bottom: -10px;
-    font-size: 10px;
-    padding: 5px;
-  }
+.submit-button:hover {
+  background-color: rgb(172, 255, 151);
+}
 
 @media (mid-width:576px){
     .container{
@@ -183,8 +181,6 @@ footer {
     }
 }
 
-@media (min-width:480px){
-    form{
-        padding: 2.5rem;
-    }
+.text-center {
+    text-align: center;
 }
