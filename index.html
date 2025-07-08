@@ -5,9 +5,6 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lilita+One&display=swap" rel="stylesheet">
     <title>The Best Survey Ever Made</title>
 </head>
 <body>
@@ -17,27 +14,35 @@
 <p id="description" class="description-text">Please fill up the Survey</p>
 </header>
 <form id="survey-form">
-
+<!-- TEXT SECTION -->
 <div class="form-group">
     <label id="name-label" for="name">Name</label>
     <input type="text" name="name" id="name" class="formControl" placeholder="Enter your in-game name" required>
 </div>
+<!-- END OF TEXTSECTION-->
 
+<!-- EMAIL SECTION-->
 <div class="form-group">
     <label id="email-label" for="email">Email</label>
     <input type="email" name="email" id="email" class="formControl" placeholder="Enter your email" required>
 </div>
+<!-- END OF EMAIL SECTION-->
 
+<!-- NUMBER/AGE SECTION -->
 <div class="form-group">
     <label id="number-label" for="number">Age</label>
     <input type="number" name="age" id="number" min="1" max="130" class="formControl" placeholder="Enter your age" required>
 </div>
+<!-- END OF NUMBER SECTION -->
 
+<!-- ADDRESS SECTION -->
 <div class="form-group">
     <label for="address">Address</label>
     <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address" required>
 </div>
+<!-- END OF ADRESS SECTION -->
 
+<!-- DROP SECTION -->
 <div class="form-group">
 <p>What is your favourite food?</p>
 <select name="food" id="dropdown" class="formControl" required>
@@ -49,7 +54,9 @@
     <option value="other">Other</option>
 </select>
 </div>
+<!-- END OF DROP SECTION -->
 
+<!-- RADIO SECTION -->
 <div class="form-group">
     <p>Do you like cooking?</p>
     <label>
@@ -62,7 +69,9 @@
         <input type="radio" class="input-radio" value="not-sure" name="user-recommend">I'm not sure
     </label>
 </div>
+<!-- END OF RADIO SECTION -->
 
+<!-- SECOND DROP SECTION -->
 <div class="form-group">
     <p>What is your favourite drink?</p>
 <select name="drink" id="fav-drink" class="formControl" required>
@@ -73,10 +82,12 @@
 <option value="other-drink">Other Drink</option>
 </select>
 </div>
+<!-- END OF SECOND DROP SECTION -->
 
+<!-- CHECKBOX SECTION -->
 <div class="form-group">
     <p>What are your favourite games?
-        <span class="stext">(You can check multiple options)</span>
+        <span class="clue">(You can check multiple options)</span>
     </p>
     <label>
     <input type="checkbox" name="prefer" class="input-checkbox" value="lol">League of Legends
@@ -109,20 +120,21 @@
                                         <input type="checkbox" name="prefer" class="input-checkbox" value="rs-classic">RuneScape Classic
                                         </label>
 </div>
+<!-- END OF CHECKBOX SECTION -->
 
+<!-- COMMENT SECTION -->
 <div class="form-group">
     <p>Do you have any comments or suggestions?</p>
     <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
 </div>
+<!-- END OF COMMENT SECTION -->
 
+<!-- BUTTON SECTION -->
 <div class="form-group">
 <button type="submit" id="submit" class="submit-button">Submit</button>
 </div>
-
+<!-- END OF BUTTON SECTION -->
   </form>
 </div>
-<footer id="footer">
-    <p>© 2024 Vax Man</p>
-</footer>
 </body>
 </html>
